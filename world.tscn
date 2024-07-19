@@ -19,3 +19,7 @@ box_id = 2
 [node name="caixa3" parent="." instance=ExtResource("2_w1vny")]
 position = Vector2(739, 451)
 box_id = 3
+
+[node name="caixa4" parent="." instance=ExtResource("2_w1vny")]
+position = Vector2(739, 451)
+box_id = 4

@@ -37,10 +37,8 @@ func movimento_boneco(delta):
 	move_and_slide()
 	
 	if can_interact and Input.is_action_just_pressed("ação"):
-		print("apertou")
+		print("apertouuuuuu")
 		print(current_box.box_id)
 		if current_box:
 			current_box.tiagay()
-	
 
-	
