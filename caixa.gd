@@ -27,7 +27,7 @@ func _on_body_exited(body):
 	if body.name == "CharacterBody2D":
 		body.can_interact = false
 		body.current_box = null
-		print("saiu")
+		print("saiuuuuu")
 		
 func tiagay():
 	print("tiagomamou")
