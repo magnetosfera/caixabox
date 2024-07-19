@@ -27,9 +27,9 @@ func _on_body_exited(body):
 	if body.name == "CharacterBody2D":
 		body.can_interact = false
 		body.current_box = null
-		print("saiuuuu")
+		print("saiuuuuu")
 		
 func tiagay():
-	print("tiagomamouuuuuu")
+	print("tiagomamou")
 	$AudioStreamPlayer2D.play()
 
