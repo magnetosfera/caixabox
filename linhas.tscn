@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://cltnvfbcw842u"]
+
+[node name="LINHAS" type="Node"]
+
+[node name="Line2D" type="Line2D" parent="."]

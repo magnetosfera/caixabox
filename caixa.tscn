@@ -1,0 +1,38 @@
+[gd_scene load_steps=6 format=3 uid="uid://dvamrp5oe2ev2"]
+
+[ext_resource type="Texture2D" uid="uid://b8ijhecttaa7c" path="res://icon.svg" id="1_mlqn4"]
+[ext_resource type="Script" path="res://caixa.gd" id="1_ydrid"]
+[ext_resource type="AudioStream" uid="uid://klgqlymw52bo" path="res://jump(1).wav" id="3_hti07"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_prff0"]
+size = Vector2(151, 143)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2clro"]
+size = Vector2(142, 131)
+
+[node name="caixa" type="Area2D"]
+collision_layer = 2
+script = ExtResource("1_ydrid")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_mlqn4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1.5, 2.5)
+shape = SubResource("RectangleShape2D_prff0")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(1, 2.5)
+shape = SubResource("RectangleShape2D_2clro")
+debug_color = Color(0.920613, 0.161429, 0.572604, 0.42)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_hti07")
+bus = &"som_caixa"
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
+[connection signal="input_event" from="." to="." method="_on_input_event"]
