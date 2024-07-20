@@ -13,6 +13,7 @@ size = Vector2(92, 88)
 [node name="caixa" type="Area2D"]
 collision_layer = 2
 script = ExtResource("1_ydrid")
+box_id = null
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(1, -2)

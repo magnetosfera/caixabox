@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://dxf8g7q6vi81s"]
+
+[ext_resource type="Script" path="res://world.gd" id="1_bcko8"]
+[ext_resource type="PackedScene" uid="uid://fkadrdu4ruqn" path="res://player.tscn" id="1_psqmt"]
+[ext_resource type="PackedScene" uid="uid://dvamrp5oe2ev2" path="res://caixa.tscn" id="2_w1vny"]
+[ext_resource type="PackedScene" uid="uid://kq0f2qk6j24" path="res://caixa_azul.tscn" id="3_5luma"]
+
+[node name="MAIN" type="Node"]
+script = ExtResource("1_bcko8")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_psqmt")]
+position = Vector2(323, 221)
+
+[node name="caixa" parent="." instance=ExtResource("2_w1vny")]
+position = Vector2(119, 542)
+box_id = 1
+
+[node name="caixa2" parent="." instance=ExtResource("2_w1vny")]
+position = Vector2(1007, 93)
+box_id = 2
+
+[node name="caixa3" parent="." instance=ExtResource("2_w1vny")]
+position = Vector2(739, 451)
+box_id = 3
+
+[node name="caixa4" parent="." instance=ExtResource("2_w1vny")]
+position = Vector2(101, 88)
+box_id = 4
+
+[node name="caixa_azul" parent="." instance=ExtResource("3_5luma")]
+position = Vector2(982, 520)
+box_id = 24
