@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://kq0f2qk6j24"]
+
+[ext_resource type="PackedScene" uid="uid://dvamrp5oe2ev2" path="res://caixa.tscn" id="1_kybr5"]
+
+[node name="caixa_azul" instance=ExtResource("1_kybr5")]
+
+[node name="Sprite2D" parent="." index="0"]
+frame = 3

@@ -14,6 +14,7 @@ func movimento_boneco(delta):
 		velocity.x = speed
 		velocity.y = 0
 		$AnimatedSprite2D.play("anda_direita")
+		
 	elif Input.is_action_pressed("esquerda"):
 		velocity.x = -speed
 		velocity.y = 0
@@ -33,6 +34,11 @@ func movimento_boneco(delta):
 		velocity.x = 0
 		velocity.y = 0
 		$AnimatedSprite2D.play("idle")
+		
+	if velocity.length() != 0 and $Timer.time_left == 0:
+		$AudioStreamPlayer2D.pitch_scale = randf_range(0.8, 1.2)
+		$AudioStreamPlayer2D.play()
+		$Timer.start()
 		
 	move_and_slide()
 	
