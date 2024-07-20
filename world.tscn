@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://dxf8g7q6vi81s"]
+[gd_scene load_steps=9 format=3 uid="uid://dxf8g7q6vi81s"]
 
 [ext_resource type="Script" path="res://world.gd" id="1_bcko8"]
 [ext_resource type="PackedScene" uid="uid://fkadrdu4ruqn" path="res://player.tscn" id="1_psqmt"]
 [ext_resource type="Texture2D" uid="uid://cm0leasct6h5x" path="res://sokoban_tilesheet.png" id="2_mhprx"]
 [ext_resource type="PackedScene" uid="uid://dvamrp5oe2ev2" path="res://caixa.tscn" id="2_w1vny"]
 [ext_resource type="PackedScene" uid="uid://kq0f2qk6j24" path="res://caixa_azul.tscn" id="3_5luma"]
+[ext_resource type="PackedScene" uid="uid://dml506u2wpcrx" path="res://laser.tscn" id="6_2qgx6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_74nxs"]
 texture = ExtResource("2_mhprx")
@@ -1343,3 +1344,6 @@ box_id = 4
 [node name="caixa_azul" parent="." instance=ExtResource("3_5luma")]
 position = Vector2(982, 520)
 box_id = 24
+
+[node name="Laser" parent="." instance=ExtResource("6_2qgx6")]
+position = Vector2(105, 219)
