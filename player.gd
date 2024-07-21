@@ -47,6 +47,6 @@ func movimento_boneco(delta):
 	if can_interact and Input.is_action_just_pressed("ação"):
 		print("apertouuuuuu")
 		print(current_box.box_id)
-		if current_box:
-			current_box.tiagay()
+		#if current_box:
+			#current_box.tiagay()
 

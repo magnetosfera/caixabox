@@ -19,7 +19,7 @@ texture = ExtResource("3_ky8ed")
 centered = false
 offset = Vector2(0, -12)
 region_enabled = true
-region_rect = Rect2(0, 0, 100, 24)
+region_rect = Rect2(0, 0, 0, 24)
 
 [node name="Fim" type="Marker2D" parent="."]
 position = Vector2(100, 0)

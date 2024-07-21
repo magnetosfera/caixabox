@@ -11,25 +11,27 @@ func _ready():
 	if not is_connected("body_exited", Callable (self, "_on_body_exited")):
 		connect("body_exited", Callable (self, "_on_body_exited"))
 
-
-#func _physics_process(delta):
-	##if player_in_area == true:
-		##$AudioStreamPlayer2D.play()
+func _physics_process(delta):
+	if player_in_area == true and Input.is_action_just_pressed("conexão"):
+		VariaveisGlobais.emit_signal("caixa_ativada", position)
+		print ("ativou")
 
 func _on_body_entered(body):
-	if body.name == "CharacterBody2D":
+	if body.name == "player":
 		body.can_interact = true
 		body.current_box = self
 		player_in_area = true
 		print("entrou")
 
 func _on_body_exited(body):
-	if body.name == "CharacterBody2D":
+	if body.name == "player":
 		body.can_interact = false
 		body.current_box = null
-		print("saiuuuuu")
-		
-func tiagay():
-	print("tiagomamouuuuuuuuuuu")
-	$AudioStreamPlayer2D.play()
+		player_in_area = false
+		print("saiu")
+
+func posição_caixa(caixa_ativada):
+	global_position = caixa_ativada
+	
+	
 
