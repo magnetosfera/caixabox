@@ -30,6 +30,6 @@ func _on_body_exited(body):
 		print("saiuuuuu")
 		
 func tiagay():
-	print("tiagomamou")
+	print("tiagomamouuuuuuuuuuu")
 	$AudioStreamPlayer2D.play()
 
