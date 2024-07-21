@@ -1322,28 +1322,28 @@ layer_0/tile_data = PackedInt32Array(65535, 2883584, 24, 0, 2883584, 24, 1, 2883
 layer_1/name = "parede"
 layer_1/tile_data = PackedInt32Array(-65537, 1835008, 24, -131072, 1835008, 24, -131071, 1835008, 24, -131070, 1835008, 24, -131069, 1835008, 24, -131068, 1835008, 24, -131067, 1835008, 24, -131066, 1835008, 24, -131065, 1835008, 24, -131064, 1835008, 24, -131063, 1835008, 24, -131062, 1835008, 24, -131061, 1835008, 24, -131060, 1835008, 24, -131059, 1835008, 24, -131058, 1835008, 24, -131057, 1835008, 24, -131056, 1835008, 24, -131055, 1835008, 24, -65519, 1835008, 24, -65520, 1835008, 24, -65521, 1835008, 24, -65522, 1835008, 24, -65523, 1835008, 24, -65524, 1835008, 24, -65525, 1835008, 24, -65526, 1835008, 24, -65527, 1835008, 24, -65528, 1835008, 24, -65529, 1835008, 24, -65530, 1835008, 24, -65531, 1835008, 24, -65532, 1835008, 24, -65533, 1835008, 24, -65534, 1835008, 24, -65535, 1835008, 24, -65536, 1835008, 24, -1, 1835008, 24, -65538, 1835008, 24, -2, 1835008, 24)
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("1_psqmt")]
-position = Vector2(323, 221)
-
 [node name="caixa" parent="." instance=ExtResource("2_w1vny")]
-position = Vector2(105, 565)
+position = Vector2(651, 551)
 box_id = 1
 
 [node name="caixa2" parent="." instance=ExtResource("2_w1vny")]
-position = Vector2(1066, 179)
+position = Vector2(832, 617)
 box_id = 2
 
 [node name="caixa3" parent="." instance=ExtResource("2_w1vny")]
-position = Vector2(531, 567)
+position = Vector2(349, 285)
 box_id = 3
 
 [node name="caixa4" parent="." instance=ExtResource("2_w1vny")]
-position = Vector2(104, 218)
+position = Vector2(496, 408)
 box_id = 4
 
 [node name="caixa_azul" parent="." instance=ExtResource("3_5luma")]
-position = Vector2(982, 520)
+position = Vector2(528, 158)
 box_id = 24
 
+[node name="player" parent="." instance=ExtResource("1_psqmt")]
+position = Vector2(735, 277)
+
 [node name="Laser" parent="." instance=ExtResource("6_2qgx6")]
-position = Vector2(105, 219)
+position = Vector2(531, 161)

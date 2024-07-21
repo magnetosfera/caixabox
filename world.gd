@@ -6,7 +6,7 @@ var min_y = 72
 var max_y = 628
 
 func _physics_process(delta):
-	var player = $CharacterBody2D
+	var player = $player
 
 
 # FECHAR
