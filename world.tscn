@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://dxf8g7q6vi81s"]
+[gd_scene load_steps=11 format=3 uid="uid://dxf8g7q6vi81s"]
 
 [ext_resource type="Script" path="res://world.gd" id="1_bcko8"]
 [ext_resource type="PackedScene" uid="uid://fkadrdu4ruqn" path="res://player.tscn" id="1_psqmt"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://dvamrp5oe2ev2" path="res://caixa.tscn" id="2_w1vny"]
 [ext_resource type="PackedScene" uid="uid://kq0f2qk6j24" path="res://caixa_azul.tscn" id="3_5luma"]
 [ext_resource type="PackedScene" uid="uid://dml506u2wpcrx" path="res://laser.tscn" id="6_2qgx6"]
+[ext_resource type="PackedScene" uid="uid://dekglbdg7uoda" path="res://line_2d.tscn" id="7_pnsl6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_74nxs"]
 texture = ExtResource("2_mhprx")
@@ -1380,3 +1381,6 @@ E  = ATIVAR
 F  = DESATIVAR
 C = CONECTAR LASER
 M = MUDAR POSIÇÃO LASER"
+
+[node name="Line2D" parent="." instance=ExtResource("7_pnsl6")]
+position = Vector2(214, 173)
