@@ -13,6 +13,7 @@ func _ready():
 
 func _physics_process(delta):
 	if player_in_area == true and Input.is_action_just_pressed("conexão"):
+		VariaveisGlobais.emit_signal("id_caixa", box_id)
 		VariaveisGlobais.emit_signal("caixa_ativada", position)
 		print ("ativou")
 

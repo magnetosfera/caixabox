@@ -16,7 +16,7 @@ func _ready():
 	VariaveisGlobais.caixa_ativada.connect(posição_laser)
 
 func _physics_process(delta: float) -> void:
-	if Input.is_action_just_pressed("ação"):
+	if Input.is_action_just_pressed("conexão"):
 		laser_on = true
 	if Input.is_action_just_pressed("sair"):
 		laser_on = false

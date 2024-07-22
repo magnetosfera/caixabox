@@ -1,10 +1,11 @@
-[gd_scene load_steps=11 format=3 uid="uid://dxf8g7q6vi81s"]
+[gd_scene load_steps=12 format=3 uid="uid://dxf8g7q6vi81s"]
 
 [ext_resource type="Script" path="res://world.gd" id="1_bcko8"]
 [ext_resource type="PackedScene" uid="uid://fkadrdu4ruqn" path="res://player.tscn" id="1_psqmt"]
 [ext_resource type="Texture2D" uid="uid://cm0leasct6h5x" path="res://sokoban_tilesheet.png" id="2_mhprx"]
 [ext_resource type="PackedScene" uid="uid://dvamrp5oe2ev2" path="res://caixa.tscn" id="2_w1vny"]
 [ext_resource type="PackedScene" uid="uid://kq0f2qk6j24" path="res://caixa_azul.tscn" id="3_5luma"]
+[ext_resource type="PackedScene" uid="uid://3xkyhvf8f8ws" path="res://linhaarray.tscn" id="4_42bpp"]
 [ext_resource type="PackedScene" uid="uid://dml506u2wpcrx" path="res://laser.tscn" id="6_2qgx6"]
 [ext_resource type="PackedScene" uid="uid://dekglbdg7uoda" path="res://line_2d.tscn" id="7_pnsl6"]
 
@@ -1343,7 +1344,7 @@ position = Vector2(651, 551)
 box_id = 1
 
 [node name="caixa2" parent="." instance=ExtResource("2_w1vny")]
-position = Vector2(832, 617)
+position = Vector2(946, 326)
 box_id = 2
 
 [node name="caixa3" parent="." instance=ExtResource("2_w1vny")]
@@ -1359,6 +1360,7 @@ position = Vector2(528, 158)
 box_id = 24
 
 [node name="Laser" parent="." instance=ExtResource("6_2qgx6")]
+visible = false
 position = Vector2(531, 161)
 
 [node name="player" parent="." instance=ExtResource("1_psqmt")]
@@ -1383,4 +1385,8 @@ C = CONECTAR LASER
 M = MUDAR POSIÇÃO LASER"
 
 [node name="Line2D" parent="." instance=ExtResource("7_pnsl6")]
-position = Vector2(214, 173)
+visible = false
+position = Vector2(539, 286)
+
+[node name="linhaarray" parent="." instance=ExtResource("4_42bpp")]
+position = Vector2(640, 297)

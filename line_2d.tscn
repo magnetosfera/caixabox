@@ -2,6 +2,6 @@
 
 [ext_resource type="Script" path="res://line_2d.gd" id="1_yspfr"]
 
-[node name="Line2D" type="Line2D"]
-points = PackedVector2Array(0, 1, 0, 2)
+[node name="linhaconexão" type="Line2D"]
+points = PackedVector2Array(0, 0, 0, 0, 0, 0)
 script = ExtResource("1_yspfr")
