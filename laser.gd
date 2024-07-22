@@ -6,7 +6,7 @@ const COMPRIMENTO_MÁXIMO = 2000
 @onready var fim = $Fim
 @onready var ray_cast_2d = $RayCast2D
 @onready var player = $"../player"
-var final_laser = null
+var final_laser : Vector2
 var laser_on = false
 var caixa1ativa = false
 var caixa2ativa = false
