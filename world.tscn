@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://dxf8g7q6vi81s"]
+[gd_scene load_steps=11 format=3 uid="uid://dxf8g7q6vi81s"]
 
 [ext_resource type="Script" path="res://world.gd" id="1_bcko8"]
 [ext_resource type="PackedScene" uid="uid://fkadrdu4ruqn" path="res://player.tscn" id="1_psqmt"]
@@ -7,7 +7,6 @@
 [ext_resource type="PackedScene" uid="uid://kq0f2qk6j24" path="res://caixa_azul.tscn" id="3_5luma"]
 [ext_resource type="PackedScene" uid="uid://3xkyhvf8f8ws" path="res://linhaarray.tscn" id="4_42bpp"]
 [ext_resource type="PackedScene" uid="uid://dml506u2wpcrx" path="res://laser.tscn" id="6_2qgx6"]
-[ext_resource type="PackedScene" uid="uid://dekglbdg7uoda" path="res://line_2d.tscn" id="7_pnsl6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_74nxs"]
 texture = ExtResource("2_mhprx")
@@ -1339,20 +1338,20 @@ layer_0/tile_data = PackedInt32Array(65535, 2883584, 24, 0, 2883584, 24, 1, 2883
 layer_1/name = "parede"
 layer_1/tile_data = PackedInt32Array(-65537, 1835008, 24, -131072, 1835008, 24, -131071, 1835008, 24, -131070, 1835008, 24, -131069, 1835008, 24, -131068, 1835008, 24, -131067, 1835008, 24, -131066, 1835008, 24, -131065, 1835008, 24, -131064, 1835008, 24, -131063, 1835008, 24, -131062, 1835008, 24, -131061, 1835008, 24, -131060, 1835008, 24, -131059, 1835008, 24, -131058, 1835008, 24, -131057, 1835008, 24, -131056, 1835008, 24, -131055, 1835008, 24, -65519, 1835008, 24, -65520, 1835008, 24, -65521, 1835008, 24, -65522, 1835008, 24, -65523, 1835008, 24, -65524, 1835008, 24, -65525, 1835008, 24, -65526, 1835008, 24, -65527, 1835008, 24, -65528, 1835008, 24, -65529, 1835008, 24, -65530, 1835008, 24, -65531, 1835008, 24, -65532, 1835008, 24, -65533, 1835008, 24, -65534, 1835008, 24, -65535, 1835008, 24, -65536, 1835008, 24, -1, 1835008, 24, -65538, 1835008, 24, -2, 1835008, 24)
 
-[node name="caixa" parent="." instance=ExtResource("2_w1vny")]
-position = Vector2(651, 551)
+[node name="caixa1" parent="." instance=ExtResource("2_w1vny")]
+position = Vector2(349, 285)
 box_id = 1
 
 [node name="caixa2" parent="." instance=ExtResource("2_w1vny")]
-position = Vector2(946, 326)
+position = Vector2(496, 408)
 box_id = 2
 
 [node name="caixa3" parent="." instance=ExtResource("2_w1vny")]
-position = Vector2(349, 285)
+position = Vector2(651, 551)
 box_id = 3
 
 [node name="caixa4" parent="." instance=ExtResource("2_w1vny")]
-position = Vector2(496, 408)
+position = Vector2(946, 326)
 box_id = 4
 
 [node name="caixa_azul" parent="." instance=ExtResource("3_5luma")]
@@ -1383,10 +1382,6 @@ E  = ATIVAR
 F  = DESATIVAR
 C = CONECTAR LASER
 M = MUDAR POSIÇÃO LASER"
-
-[node name="Line2D" parent="." instance=ExtResource("7_pnsl6")]
-visible = false
-position = Vector2(539, 286)
 
 [node name="linhaarray" parent="." instance=ExtResource("4_42bpp")]
 position = Vector2(640, 297)

@@ -5,7 +5,7 @@ var max_x = 1120
 var min_y = 72
 var max_y = 628
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	var player = $player
 
 
