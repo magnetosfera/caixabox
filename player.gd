@@ -10,7 +10,7 @@ func _physics_process(delta):
 	movimento_boneco(delta)
 	
 
-func movimento_boneco(delta):
+func movimento_boneco(_delta):
 	if Input.is_action_pressed("direita"):
 		velocity.x = speed
 		velocity.y = 0

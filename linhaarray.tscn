@@ -4,3 +4,6 @@
 
 [node name="linhaarray" type="Line2D"]
 script = ExtResource("1_qx0fy")
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+collision_mask = 2
